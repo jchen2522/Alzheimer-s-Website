@@ -1,0 +1,195 @@
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+   margin: 0px;
+   padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+ background-color: lightcyan;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+main {
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+
+div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* FLEXBOX */
+.flex-container-home{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-item-home{
+  flex-basis: 100;
+  text-align: center;
+}
+.flex-container-donate{
+  display: flex;
+  flex-direction: row;
+}
+.flex-item-donate{
+  flex-basis: 100;
+  text-align: center;
+}
+
+/* STYLE TEXT */
+header {
+  text-align: center;
+  margin-top: 5%;
+}
+h1 {
+  color: navy;
+  font-family:'Delius', cursive;
+  font-size: 6.5em;
+}
+h2 {
+  margin-top: 2%;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1em;
+  font-size: 2em;
+}
+h3 {
+  font-family: 'Caveat', cursive;
+  font-size: 3em;
+}
+h4 {
+  font-size: 2em;
+}
+
+div ul li {
+  padding:2px;
+  padding-left:25px;
+  margin-left: 50px;
+  text-align: left;
+  font-size: 20px;
+}
+
+p {
+  font-size: 2em;
+  padding: 1em;
+}
+
+/* STYLE IMAGES */
+img {
+  width: auto;
+  height: 150px;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* STYLE NAV BAR */
+nav {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom:2%;
+  color: #007070;
+  border-bottom: 10px solid white;
+}
+
+nav ul li {
+  display: inline;
+  padding: 5px;
+  font-size: 3em;
+}
+
+nav ul li a {
+  padding-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+li a:visited{
+  color: #007070;
+}
+li a:link{
+  color: #007070;
+}
+li a:hover{
+  color:#007070;
+  background-color: white;
+}
+
+/* STYLE BUTTONS */
+
+#factGen {
+  position: relative;
+  float: right;
+  justify-content: space-around;
+  background-color: #fefddc;
+  border-radius: 15px;
+  text-align: center;
+  color: #4a1f00;
+  width: 500px;
+  height: 300px;
+  top: 0;
+  right: 0;
+}
+
+#clickMe {
+  background-color: #ffe380;
+/*   border: none; */
+  border-radius:15px;
+  border: solid  #4a1f00;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  box-shadow: 0 9px #999;
+}
+button:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(1px);
+} 
+
+/* MORE */
+
+.center{
+  text-align: center;
+}
+.left {
+  margin-right: 40%;
+}
+.yellowbg{
+  background-color: #fefddc;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 15px;
+}
+
+/* ANIMATION */
+.typewriter{
+  overflow: hidden; 
+  border-right: .10em solid #0062ff; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  animation: 
+    typing 3.5s steps(40, end), /*speed*/
+    blink-caret .75s step-end infinite;
+}
+
+/* typing effect */
+@keyframes typing {
+  from {width: 0}
+  to {width: 100%}
+}
+
+/* cursor effect */
+@keyframes blink-caret {
+  from, to {border-color: transparent}
+  50% {border-color: #0062ff;}
+}
